@@ -16,6 +16,7 @@ class HomePage extends ConsumerWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: ListView(
+        physics: const NeverScrollableScrollPhysics(),
         children: [
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),

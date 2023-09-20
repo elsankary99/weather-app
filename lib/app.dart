@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:weather/screen/home_page.dart';
+import 'package:weather/screen/splash_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
           textTheme: GoogleFonts.tekturTextTheme(Theme.of(context).textTheme)),
-      home: const HomePage(),
+      home: const SplashPage(),
     );
   }
 }
