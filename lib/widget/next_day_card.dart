@@ -53,12 +53,12 @@ class NextDayCard extends StatelessWidget {
                         Text(
                           d1.text!,
                           style:
-                              const TextStyle(color: Colors.grey, fontSize: 14),
+                              const TextStyle(color: Colors.grey, fontSize: 18),
                         ),
                       ],
                     ),
                     SizedBox(
-                      width: 90,
+                      width: 100,
                       child: Image.network(
                         "https:${d1.icon}",
                         fit: BoxFit.fill,

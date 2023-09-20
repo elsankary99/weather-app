@@ -26,6 +26,7 @@ class HomePage extends ConsumerWidget {
               ),
             ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(height: context.height * 0.05),
                 const CustomTextField(),
@@ -58,10 +59,16 @@ class HomePage extends ConsumerWidget {
                                   ],
                                 )
                               ]),
-                          error: (error, stackTrace) =>
-                              Center(child: Text(error.toString())),
+                          error: (error, stackTrace) => Center(
+                              child: Text(
+                            error.toString(),
+                            style: const TextStyle(
+                                color: Colors.red, fontSize: 20),
+                          )),
                           loading: () => const Center(
-                            child: CircularProgressIndicator(),
+                            child: CircularProgressIndicator(
+                              color: Colors.white,
+                            ),
                           ),
                         )
                     : SizedBox(
